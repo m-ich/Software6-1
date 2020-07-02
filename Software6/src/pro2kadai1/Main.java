@@ -40,26 +40,26 @@ public class Main {
 		y.calcCreditsPerCourse();
 		z.calcCreditsPerCourse();
 
-		x.showTotalCredits();
-		y.showTotalCredits();
-		z.showTotalCredits();
-		
-		System.out.println();
-		System.out.println("Whose timetable do you want to know ?");
+		System.out.println("Whose number of credits and timetable do you want to know?");
 		System.out.println("Megu or Mai or Riko");
-		
 		
 		Scanner sc = new Scanner(System.in);
 		String st = sc.next();
 		if(st.equals("Megu")) {
+			x.showTotalCredits();
+			System.out.println();
 			for (int i=0; i<megu.length; i++) {
 				System.out.println(megu[i].timeTable());
 			}
 		} else if (st.equals("Mai")) {
+			y.showTotalCredits();
+			System.out.println();
 			for (int i=0; i<mai.length; i++) {
 				System.out.println(mai[i].timeTable());
 			}
 		} else if (st.equals("Riko")){
+			z.showTotalCredits();
+			System.out.println();
 			for (int i=0; i<riko.length; i++) {
 				System.out.println(riko[i].timeTable());
 			}

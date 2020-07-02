@@ -34,7 +34,7 @@ public class Kougi {
 	}
 	
 	public String timeTable() {
-		String s = toString() + "  " + name() + " " + this.m_time;
+		String s = toString() + ",  " + name() + " sensei, " + this.m_time;
 		return s;
 	}
 }

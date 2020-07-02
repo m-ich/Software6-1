@@ -43,9 +43,11 @@ public class Student {
 
 	public void showTotalCredits() {
 		System.out.println("Name: "+this.m_name);
-		System.out.println("Credits (hisshu): "+this.m_creditsPerCourse[0]);
-		System.out.println("Credits (sentaku hisshu): "+this.m_creditsPerCourse[1]);
+		System.out.println("expected to acquire Credits in first term of third grade");
+		System.out.println("Credits (hisshuu): "+this.m_creditsPerCourse[0]);
+		System.out.println("Credits (sentaku hisshuu): "+this.m_creditsPerCourse[1]);
 		System.out.println("Credits (sentaku): "+this.m_creditsPerCourse[2]);
+		System.out.println();
 		System.out.println("Remaining Credits: "+remainCredits());
 	}
 }
